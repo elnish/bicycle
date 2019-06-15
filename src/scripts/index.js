@@ -1,3 +1,4 @@
+//Email validation
 let form = document.querySelector('.email__form');
 let input = document.querySelector('.email__input');
 let masege = document.querySelector('.email__masege');
@@ -32,16 +33,27 @@ function validate(event) {
 
 form.addEventListener('submit', validate);
 
-
-
   //for .hamburger
-  var hamburger = document.querySelector(".hamburger");
-  var menu = document.querySelector(".menu-mobile__menu");
-  var header = document.querySelector(".header");
+  let hamburger = document.querySelector(".hamburger");
+  let menu = document.querySelector(".menu-mobile__menu");
+  let header = document.querySelector(".header");
 
   hamburger.addEventListener("click", function() {
    
-    hamburger.classList.toggle("is-active"); 
+    hamburger.classList.toggle("large"); 
     menu.classList.toggle("show");
     header.classList.toggle("down");
   });
+
+let textList = document.querySelectorAll(".text-block_small");
+let picList = document.querySelectorAll(".work__picture");
+for(let i = 0; i < textList.length; i++) {
+    textList[i].addEventListener("mouseover", function() {  
+        textList[i].classList.add("large"); 
+        picList[i].classList.add("smaller"); 
+    });
+    textList[i].addEventListener("mouseout", function() {  
+        textList[i].classList.remove("large"); 
+        picList[i].classList.remove("smaller"); 
+    });
+}

@@ -210,9 +210,9 @@
   font: 18px "Lato", sans-serif; }
   .text-block_small {
     flex-basis: 530px;
-    height: 410px; }
-    .text-block_small:hover {
-      height: 100%; }
+    height: 410px;
+    transition: height 1s ease-in;
+    cursor: pointer; }
   .text-block__img {
     width: 52px;
     height: 43px;
@@ -253,6 +253,9 @@
     font-weight: 300;
     line-height: 30px; }
 
+.large {
+  height: 605px; }
+
 .work {
   width: 100%;
   height: 600px;
@@ -261,10 +264,22 @@
   justify-content: center;
   align-items: stretch;
   flex-wrap: nowrap; }
+  .work_reverse > .work__img {
+    order: 2; }
+  .work_reverse > .work__block {
+    order: 1; }
   .work__img {
     flex-grow: 2;
     background: url(../images/bigpic1.png) no-repeat center center;
     position: relative; }
+    .work__img_second-block {
+      background: url(../images/bigpic2.png) no-repeat center center; }
+    .work__img_third-block {
+      background: url(../images/bigpic3.png) no-repeat center center;
+      flex-basis: 530px; }
+    .work__img_left {
+      background: url(../images/bigpic4.png) no-repeat center center;
+      flex-basis: 530px; }
   .work__logo {
     width: 113px;
     height: 118px;
@@ -272,9 +287,35 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); }
+    .work__logo_second-block {
+      width: 177px;
+      height: 152px; }
+    .work__logo_third-block {
+      width: 208px;
+      height: 67px; }
   .work__picture {
-    max-height: 200px;
-    max-width: 530px; }
+    background: url(../images/seat11.png) no-repeat;
+    background-size: cover;
+    height: 190px;
+    width: 530px;
+    transition: height 1s ease-in; }
+    .work__picture_second-block {
+      background: url(../images/seat13.png) no-repeat; }
+  .work__line {
+    width: 50px;
+    height: 1px;
+    background-color: #353738;
+    margin-top: 40px; }
+  .work__triangle {
+    border: 15px solid transparent;
+    border-top: 15px solid #f7f7f7;
+    display: block;
+    width: 0;
+    height: 0;
+    margin-left: 250px; }
+
+.smaller {
+  height: 0; }
 
 html, body {
   position: relative;

@@ -8,9 +8,8 @@
     &_small {
         flex-basis: 530px;
         height: 410px;
-        &:hover {
-            height: 100%;
-        }
+        transition: height 1s ease-in;
+        cursor: pointer;
     }
     &__img {
         width: 52px;
@@ -62,5 +61,8 @@
         font-weight: 300;
         line-height: 30px;
     }
+}
 
+.large {
+    height: (415px + 190px)
 }

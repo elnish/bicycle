@@ -3,19 +3,67 @@
     height: 600px;
     @include displayFlex(row, center, stretch);
     flex-wrap: nowrap;
+    &_reverse > &__img {
+        order: 2;
+    }
+    &_reverse > &__block {
+        order: 1;
+    }
     &__img {
         flex-grow: 2;
         background: url(../images/bigpic1.png) no-repeat center center;
         position: relative;
+        &_second-block {
+            background: url(../images/bigpic2.png) no-repeat center center;
+        }
+        &_third-block {
+            background: url(../images/bigpic3.png) no-repeat center center;
+            flex-basis: 530px;
+        }
+        &_left {
+            background: url(../images/bigpic4.png) no-repeat center center;
+            flex-basis: 530px;
+        }
     }
     &__logo {
         width: 113px;
         height: 118px;
         @include blockCenter;
+        &_second-block {
+            width: 177px;
+            height: 152px;
+        }
+        &_third-block {
+            width: 208px;
+            height: 67px;
+        }
     }
-  
     &__picture {
-        max-height: 200px;
-        max-width: 530px;
+        background: url(../images/seat11.png) no-repeat;
+        background-size: cover;
+        height: 190px;
+        width: 530px;
+        transition: height 1s ease-in;
+        &_second-block {
+            background: url(../images/seat13.png) no-repeat;
+        }
     }
+    &__line {
+        width: 50px;
+        height: 1px;
+        background-color: $hTextColor;
+        margin-top: 40px;
+    }
+    &__triangle {
+        border: 15px solid transparent;
+        border-top: 15px solid $bgcolor;
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: 250px;
+    }
+}
+
+.smaller {
+    height: 0;
 }
