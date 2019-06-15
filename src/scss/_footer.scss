@@ -1,0 +1,76 @@
+.footer {
+    width: 100%;
+    height: 250px;
+    background-color: $bgcolor;
+    @include displayFlex(row, space-between, center);
+    padding: 0 20%;
+    &__info {
+        @include infoFont;
+        &_strong {
+            font-size: $footerHeaderFS;
+            font-weight: $boldFont;
+        } 
+    }
+    &__contact {
+        text-decoration: none;
+        @include infoFont;
+        &_hover {
+            &:hover {
+                color: $secondMainColor;
+            }
+        }
+    }
+    &__list {
+        list-style: none;
+        @include displayFlex(row, center, center);
+    }
+    &__social {
+        width: 35px;
+        height: 35px;
+        margin-right: 8px;
+        transition: transform .6s ease-out;
+        object-fit: contain;
+        &_hover {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    &__handcrafted {
+        height: 35px;
+        text-decoration: none;
+        @include infoFont;
+        @include displayFlex(row, space-between, center);
+    } 
+    &__text {
+        padding-right: 10px;
+    }
+    &__logo {
+        width: 55px;
+        height: 35px;
+        transition: transform .6s ease-out;
+        &_hover {
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 640px) {
+
+    .footer {
+        @include displayFlex(column, space-around, center);
+        height: 300px;
+        &__info {
+            font-size: ($textFontSize + 5);
+            text-align: center;
+        }
+        &__contact {
+            font-size: ($textFontSize + 5);
+        }
+        &__social {
+            margin-right: 25px;
+        }
+    }
+}

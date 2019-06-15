@@ -1,0 +1,35 @@
+@mixin displayFlex($direction, $justifyCont, $alignItems) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyCont;
+    align-items: $alignItems;
+}
+
+@mixin outline($color, $shadow) {
+    outline: 1.5px solid $color;
+    box-shadow: 0 0 5px $shadow;
+    border: none;
+}
+
+@mixin infoFont {
+    font: italic $textFontSize $mainFont;
+    color: $textColor;
+}
+
+@mixin blockCenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin inner {
+    width: 40px;
+    height: 4px;
+    background-color: $secondMainColor;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease;
+}

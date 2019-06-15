@@ -1,0 +1,21 @@
+.work {
+    width: 100%;
+    height: 600px;
+    @include displayFlex(row, center, stretch);
+    flex-wrap: nowrap;
+    &__img {
+        flex-grow: 2;
+        background: url(../images/bigpic1.png) no-repeat center center;
+        position: relative;
+    }
+    &__logo {
+        width: 113px;
+        height: 118px;
+        @include blockCenter;
+    }
+  
+    &__picture {
+        max-height: 200px;
+        max-width: 530px;
+    }
+}

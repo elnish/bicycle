@@ -1,0 +1,66 @@
+.text-block {
+    @include displayFlex(column, center, center);
+    height: 470px;
+    width: 100%;
+    background-color: $bgcolor;
+    text-align: center;
+    font: 18px $mainFont;
+    &_small {
+        flex-basis: 530px;
+        height: 410px;
+        &:hover {
+            height: 100%;
+        }
+    }
+    &__img {
+        width: 52px;
+        height: 43px;
+        margin-bottom: $element-mb;
+    }
+    &__header {
+        text-transform: uppercase;
+        color: $hTextColor;
+        font: $boldFont 18px/3.6px;
+        margin-bottom: $element-mb;
+        word-wrap: break-word;
+        &_lowcase {
+            text-transform: lowercase;
+        }
+        &_light {
+            color: $textColor;
+            font-weight: 300;
+            letter-spacing: 1.8px;
+        }  
+    }
+    &__text {
+        font-weight: 400;
+        line-height: 34px;
+        color: $textColor;
+        max-width: 1100px;
+    }
+    &_slider >  &__img {
+        width: 32px;
+        height: 27px;
+    }
+    &_slider >  &__text {
+        max-width: 1000px;
+        font-size: 24px;
+        margin-bottom: $element-mb;
+    }
+    &_small >  &__img {
+        margin-bottom: 26px;
+        width: 41px;
+        height: 30px;
+      
+    }
+    &_small >  &__header {
+        margin-bottom: 26px;
+    }
+    &_small >  &__text {
+        max-width: 410px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 30px;
+    }
+
+}

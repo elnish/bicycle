@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicucle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
+</head>
+<body>
+
+    <header class='header'>
+        <nav class="header__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item menu__item_dot"><a href="#" class="menu__link menu__link_hover">About us</a></li>
+                <span menu__dot>.</span>
+                <li class="menu__item"><a href="#" class="menu__link menu__link_hover">Work</a></li>
+                <li class="menu__item"><img src="images/Logo.svg" alt="logo" class="header__logo  logo logo_hover"></li>
+                <li class="menu__item menu__item_dot"><a href="#" class="menu__link menu__link_hover">Shop</a></li>
+                <span menu__dot>.</span>
+                <li class="menu__item"><a href="#" class="menu__link menu__link_hover">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header__menu-mobile menu-mobile">
+            <button class="menu-mobile__hamburger hamburger hamburger_emphatic" type="button">
+                <span class="hamburger__box">
+                    <span class="hamburger__inner"></span>
+                </span>
+            </button>
+            <img src="./images/Logo.svg" alt="logo" class="menu-mobile__logo">
+            <nav class="menu-mobile__menu menu">
+                <ul class="menu__list menu__list_mobile">
+                    <li class="menu__item menu__item_mobile"><a href="#" class="menu__link menu__link_hover">About us</a></li>
+                    <li class="menu__item menu__item_mobile"><a href="#" class="menu__link menu__link_hover">Work</a></li>
+                    <li class="menu__item menu__item_mobile"><a href="#" class="menu__link menu__link_hover">Shop</a></li>
+                    <li class="menu__item menu__item_mobile"><a href="#" class="menu__link menu__link_hover">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="text-block">
+        <img src="./images/rounds.svg" alt="icon" class="text-block__img"/>
+        <h1 class="text-block__header">A NEW GENERATION OF VINTAGE BIKE</h1>
+        <p class="text-block__text">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+            when an unknown printer took a galley of type and scrambled it to make a type 
+            specimen book. It has survived not only five centuries, but also the leap into 
+            electronic typesetting, remaining essentially unchanged. 
+        </p>
+    </section>
+
+    <!-- <section class="work">
+        <div class="work__img">
+            <img src="./images/Logotip.svg" alt="img" class="work__logo">
+        </div>
+        <div class="work__block">
+            <div class="work__blog text-block text-block_small">
+                    <img src="./images/icon1.svg" alt="icon" class="text-block__img"/>
+                    <h1 class="text-block__header">vintage Oliva</h1>
+                    <p class="text-block__text">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            when an unknown printer took a galley of type and scrambled it to make a type 
+                            specimen book. It has survived.
+                    </p>
+            </div>
+            <img src="./images/seat11.png" alt="seat" class="work__picture">
+        </div>
+    </section> -->
+
+    <section class="swiper-container">
+        <div class="swiper-wrapper"> 
+            <div class="text-block text-block_slider swiper-slide">
+                <img src="./images/twit.svg" alt="icon" id="img" class="text-block__img"/>
+                <h1 class="text-block__header">AOD New York <span class="text-block__header text-block__header_lowcase"> 
+                    @aod <span class="text-block__header text-block__header_light">/  35 min</span></span></h1>
+                <p class="text-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. 
+                    Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+                </p>
+            </div>
+            <div class="text-block text-block_slider swiper-slide">
+                <img src="./images/twit.svg" alt="icon" id="img" class="text-block__img"/>
+                <h1 class="text-block__header">Jon Dou<span class="text-block__header text-block__header_lowcase"> 
+                    @ldou <span class="text-block__header text-block__header_light">/  1 day</span></span></h1>
+                <p class="text-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. 
+                    Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+                </p>
+            </div>
+            <div class="text-block text-block_slider swiper-slide">
+                <img src="./images/twit.svg" alt="icon" id="img" class="text-block__img"/>
+                <h1 class="text-block__header">Alena Shobotova<span class="text-block__header text-block__header_lowcase"> 
+                    @elnish <span class="text-block__header text-block__header_light">/  55 min</span></span></h1>
+                <p class="text-block__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. 
+                    Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.
+                </p>
+            </div>
+        </div>
+        <div class="text-block__slider swiper-pagination"></div>
+    </section>
+    
+    <!-- <section class="gallery">
+        <div class="gallery__img gallery__img_first">
+            <div class="gallery__block">
+                <img class="gallery__picture" src="./images/bicycle.png" alt="5">
+                <a href="#" class="gallery__link">shop now</a>
+            </div>
+        </div>
+        <div class="gallery__img gallery__img_second">
+            <div class="gallery__block">
+                <img class="gallery__picture" src="./images/bicycle.png" alt="5">
+                <a href="#" class="gallery__link">shop now</a>
+            </div>
+        </div>
+        <div class="gallery__img gallery__img_third">
+            <div class="gallery__block">
+                <img class="gallery__picture" src="./images/bicycle.png" alt="5">
+                <a href="#" class="gallery__link">shop now</a>
+            </div>
+        </div>
+        <div class="gallery__img gallery__img_fourth">
+            <div class="gallery__block">
+                <img class="gallery__picture" src="./images/bicycle.png" alt="5">
+                <a href="#" class="gallery__link">shop now</a>
+            </div>
+        </div>
+        <div class="gallery__img gallery__img_fifth">
+            <div class="gallery__block">
+                <img class="gallery__picture" src="./images/bicycle.png" alt="5">
+                <a href="#" class="gallery__link">shop now</a>
+            </div>
+        </div>
+        <div class="gallery__img gallery__img_sixth">
+            <div class="gallery__block">
+                <img class="gallery__picture" src="./images/bicycle.png" alt="5">
+                <a href="#" class="gallery__link">shop now</a>
+            </div>
+        </div>
+        <div class="gallery__img gallery__img_seventh">
+            <div class="gallery__block">
+                <img class="gallery__picture" src="./images/bicycle.png" alt="5">
+                <a href="#" class="gallery__link">shop now</a>
+            </div>
+        </div>
+        <div class="gallery__img gallery__img_eighth">
+            <div class="gallery__block">
+                <img class="gallery__picture" src="./images/bicycle.png" alt="5">
+                <a href="#" class="gallery__link">shop now</a>
+            </div>
+        </div>
+    </section> -->
+
+
+    <section class="buttonGroup">
+        <button class="buttonGroup__button buttonGroup__button_hover">visit us</button>
+        <button class="buttonGroup__button buttonGroup__button_bigger buttonGroup__button_hover">discover the
+          shop
+        </button>
+        <button class="buttonGroup__button buttonGroup__button_hover">contact us</button>
+    </section>
+
+    <section class="email">
+        <img src="images/Logo.svg" alt="logo" class="email__logo logo logo_hover">
+        <p class="email__text">Stay on the saddle!</p>
+        <form action="" class="email__form">
+            <input type="text" class="email__input email__input_focus" placeholder="enter your email..." >
+            <input type="submit" value="GO" class="email__button email__button_hover">
+        </form>
+        <p class="email__masege"></p>
+    </section>
+
+    <footer class="footer">
+        <address class="footer__info">
+            <span class="footer__info footer__info_strong">AOD New York</span> <br>
+            2250 Lexington Avenue <br>
+            New York, NY 10035 <a class="footer__contact footer__contact_hover" href="mailto:info@domain.com"> - info@domain.com</a> 
+        </address>
+        <ul class="footer__list">
+            <li class="footer__social footer__social_hover"><a href="" class="footer__link"> <img src="images/twitter.svg" alt="twitter" class="footer__icon"> </a></li>
+            <li class="footer__social footer__social_hover"><a href="" class="footer__link"> <img src="images/fb.svg" alt="facebook" class="footer__icon"> </a></li>
+            <li class="footer__social footer__social_hover"><a href="" class="footer__link"> <img src="images/pic.svg" alt="pinterest" class="footer__icon"> </a></li>
+        </ul>
+        <div class="footer__handcrafted">
+            <p class="footer__text">Handcrafted by<p>  
+            <a href="#" class="footer__logoconteiner"><img src="images/Y_E_B_O_Logo.svg" alt="logo" class="footer__logo footer__logo_hover"></a> 
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/index.js"></script>
+   
+</body>
+</html>

@@ -1,0 +1,105 @@
+@import 'hamburger';
+.header {
+    width: 100%;
+    height: 800px;
+    background: url(../images/header.png) no-repeat center center;
+    padding-top: 35px;
+    position: relative;
+}
+.menu {
+    &__list {
+        @include  displayFlex(row, space-evenly, center);
+        text-transform: uppercase;
+        width: 650px;
+        height: 85px;
+        margin: 0 auto;
+        &_mobile {
+            width: 100%;
+            @include  displayFlex(column, center, center);
+        }
+    }
+    &__item {
+        list-style: none;
+        &_mobile {
+            font-size: 34px;
+            text-align: center;
+            padding: 10px 0;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        color: $menuLinkColor;
+        font: $boldFont 13px/2.6px $mainFont;
+        &_hover {
+            &:hover {
+                color: $secondMainColor;
+            }
+        }
+    }
+    &__icon {
+        display: none;
+        width: 45px;
+        height: 35px;
+        position: relative;
+        cursor: pointer;
+    }
+    &__icon-item {
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 100%;
+        background: #333333;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+        &_first {
+            top: 0;
+        }
+        &_second, &_third {
+            top: 13px;
+        }
+        &_fourth {
+            top: 26px;
+        }
+    }
+}
+
+.menu-mobile {
+    &__logo {
+        display: none;
+        position: absolute;
+        right: 50px;
+        top: 75px;
+    }
+    &__menu {
+        display: none;
+        position: absolute;
+        top: 220px;
+        left:0;
+        right: 0;
+    } 
+}
+
+
+
+@media (min-width: 320px) and (max-width: 640px) {
+    .header__menu {
+        display: none;
+    }
+    .menu-mobile {
+        &__logo {
+            display: block;
+        }
+    }
+
+    .show {
+        display: block;
+    }
+    .down {
+        background-color: #f2f3f9;
+        background-position-y: 160px;
+    }
+}
+   

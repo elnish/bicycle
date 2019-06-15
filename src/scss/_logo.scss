@@ -1,0 +1,10 @@
+.logo {
+    width: 95px;
+    height: 85px;
+    transition: transform .8s ease-in-out;
+    &_hover {
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+}
