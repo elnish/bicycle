@@ -1,56 +1,55 @@
 .gallery {
     width: 100%;
     display: grid;
-    grid-template-areas: 'a1 a2 b1 b2 c2 c2' 'c1 c1 b1 b2 a3 a4';
-    grid-template-rows: repeat(2, minmax(200px, 267px));
-    grid-template-columns: repeat(6, minmax(200px, 267px));
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    
     &__img {
       background-size: cover;
       &_first {
         &:nth-child(1) {
-          grid-area: a1;
+          
           background: url("../images/seat.jpg") no-repeat;
         }
       }
       &_second {
         &:nth-child(2) {
-          grid-area: a2;
+          
           background: url("../images/seats.jpg") no-repeat;
         }
       }
       &_third {
         &:nth-child(3) {
-          grid-area: a3;
+          
           background: url("../images/seat4.jpg") no-repeat;
         }
       }
       &_fourth {
         &:nth-child(4) {
-          grid-area: a4;
+          
           background: url("../images/bag.jpg") no-repeat;
         }
       }
       &_fifth {
         &:nth-child(5) {
-          grid-area: b1;
+          
           background: url("../images/wheel.jpg") no-repeat;
         }
       }
       &_sixth {
         &:nth-child(6) {
-          grid-area: b2;
+         
           background: url("../images/wheel2.jpg") no-repeat;
         }
       }
       &_seventh {
         &:nth-child(7) {
-          grid-area: c1;
+          
           background: url("../images/seat2.jpg") no-repeat;
         }
       }
       &_eighth {
         &:nth-child(8) {
-          grid-area: c2;
+          
           background: url("../images/room.jpg") no-repeat;
         }
       }          

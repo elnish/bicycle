@@ -209,7 +209,7 @@
   text-align: center;
   font: 18px "Lato", sans-serif; }
   .text-block_small {
-    flex-basis: 530px;
+    width: 530px;
     height: 410px;
     transition: height 1s ease-in;
     cursor: pointer; }
@@ -256,6 +256,10 @@
 .large {
   height: 605px; }
 
+@media (min-width: 320px) and (max-width: 980px) {
+  .text-block_small {
+    width: 100%; } }
+
 .work {
   width: 100%;
   height: 600px;
@@ -271,15 +275,20 @@
   .work__img {
     flex-grow: 2;
     background: url(../images/bigpic1.png) no-repeat center center;
+    background-size: cover;
+    height: 600px;
     position: relative; }
     .work__img_second-block {
-      background: url(../images/bigpic2.png) no-repeat center center; }
+      background: url(../images/bigpic2.png) no-repeat center center;
+      background-size: cover; }
     .work__img_third-block {
       background: url(../images/bigpic3.png) no-repeat center center;
-      flex-basis: 530px; }
+      flex-basis: 530px;
+      background-size: cover; }
     .work__img_left {
       background: url(../images/bigpic4.png) no-repeat center center;
-      flex-basis: 530px; }
+      flex-basis: 530px;
+      background-size: cover; }
   .work__logo {
     width: 113px;
     height: 118px;
@@ -294,13 +303,17 @@
       width: 208px;
       height: 67px; }
   .work__picture {
-    background: url(../images/seat11.png) no-repeat;
+    background: url(../images/seat11.png) no-repeat center center;
     background-size: cover;
     height: 190px;
     width: 530px;
     transition: height 1s ease-in; }
     .work__picture_second-block {
-      background: url(../images/seat13.png) no-repeat; }
+      background: url(../images/seat13.png) no-repeat center center;
+      background-size: cover; }
+    .work__picture_third-block {
+      background: url(../images/Layer_16.png) no-repeat center center;
+      background-size: cover; }
   .work__line {
     width: 50px;
     height: 1px;
@@ -317,6 +330,20 @@
 .smaller {
   height: 0; }
 
+@media (min-width: 320px) and (max-width: 980px) {
+  .work {
+    height: 1390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; }
+    .work__picture {
+      width: 100%; }
+      .work__picture_second-block {
+        width: 100%; }
+    .work__triangle {
+      margin-left: 48%; } }
+
 html, body {
   position: relative;
   height: 100%; }
@@ -332,6 +359,51 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; }
+  .gallery__img {
+    background-size: cover; }
+    .gallery__img_first:nth-child(1) {
+      background: url("../images/seat.jpg") no-repeat; }
+    .gallery__img_second:nth-child(2) {
+      background: url("../images/seats.jpg") no-repeat; }
+    .gallery__img_third:nth-child(3) {
+      background: url("../images/seat4.jpg") no-repeat; }
+    .gallery__img_fourth:nth-child(4) {
+      background: url("../images/bag.jpg") no-repeat; }
+    .gallery__img_fifth:nth-child(5) {
+      background: url("../images/wheel.jpg") no-repeat; }
+    .gallery__img_sixth:nth-child(6) {
+      background: url("../images/wheel2.jpg") no-repeat; }
+    .gallery__img_seventh:nth-child(7) {
+      background: url("../images/seat2.jpg") no-repeat; }
+    .gallery__img_eighth:nth-child(8) {
+      background: url("../images/room.jpg") no-repeat; }
+  .gallery__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #64c29e;
+    opacity: 0;
+    height: 100%;
+    transition: opacity 0.8s linear; }
+  .gallery__picture {
+    width: 50px;
+    height: 30px;
+    align-self: center;
+    margin-bottom: 13px; }
+  .gallery__link {
+    align-self: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 14px; }
+  .gallery__img:hover > .gallery__block {
+    opacity: 0.8; }
 
 .buttonGroup {
   width: 100%;
