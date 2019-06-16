@@ -257,8 +257,10 @@
   height: 605px; }
 
 @media (min-width: 320px) and (max-width: 980px) {
-  .text-block_small {
-    width: 100%; } }
+  .text-block {
+    height: 470px; }
+    .text-block_small {
+      width: 100%; } }
 
 .work {
   width: 100%;
@@ -385,7 +387,7 @@ html, body {
       color: white;
       border: 1px solid white; }
 
-@media (min-width: 320px) and (max-width: 640px) {
+@media (min-width: 320px) and (max-width: 449px) {
   .buttonGroup {
     display: flex;
     flex-direction: column;
@@ -393,7 +395,9 @@ html, body {
     align-items: space-around; }
     .buttonGroup__button {
       min-width: 300px;
-      font-size: 18px; } }
+      font-size: 18px; }
+      .buttonGroup__button_bigger {
+        width: 200px; } }
 
 @media (min-width: 450px) and (max-width: 640px) {
   .buttonGroup {

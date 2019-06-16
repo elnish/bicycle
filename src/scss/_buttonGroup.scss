@@ -26,12 +26,15 @@
     }
 }
 
-@media (min-width: 320px) and (max-width: 640px) {
+@media (min-width: 320px) and (max-width: 449px) {
     .buttonGroup {
         @include displayFlex(column, space-around, space-around);
         &__button {
             min-width: 300px;
             font-size: 18px;
+            &_bigger {
+                width: 200px;
+            }
         }
     }    
 }
