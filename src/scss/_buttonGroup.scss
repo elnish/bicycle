@@ -30,6 +30,15 @@
     .buttonGroup {
         @include displayFlex(column, space-around, space-around);
         &__button {
+            min-width: 300px;
+            font-size: 18px;
+        }
+    }    
+}
+@media (min-width: 450px) and (max-width: 640px) {
+    .buttonGroup {
+        @include displayFlex(column, space-around, space-around);
+        &__button {
             min-width: 400px;
             font-size: 18px;
         }

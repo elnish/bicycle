@@ -9,13 +9,13 @@ gulp.task('scss', () => {
 });
 
 gulp.task('html', () => {
-    return gulp.src('src/index.html')
+    return gulp.src('index.html')
         .pipe(gulp.dest('app'))
 });
 
 gulp.task('watch', () => {
     gulp.watch('src/scss/*.scss', gulp.parallel('scss'));
-    gulp.watch('src/index.html', gulp.parallel('html'));
+    gulp.watch('index.html', gulp.parallel('html'));
 });
 
 gulp.task('default', gulp.parallel('scss', 'html', 'watch'));
