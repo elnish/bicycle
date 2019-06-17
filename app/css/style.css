@@ -258,8 +258,9 @@
 
 @media (min-width: 320px) and (max-width: 980px) {
   .text-block {
-    height: 470px; }
+    height: 520px; }
     .text-block_small {
+      height: 470px;
       width: 100%; } }
 
 .work {
@@ -344,7 +345,7 @@
       .work__picture_second-block {
         width: 100%; }
     .work__triangle {
-      margin-left: 48%; } }
+      margin-left: 47%; } }
 
 html, body {
   position: relative;
