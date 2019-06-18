@@ -40,7 +40,7 @@ form.addEventListener('submit', validate);
 
   hamburger.addEventListener("click", function() {
    
-    hamburger.classList.toggle("large"); 
+    hamburger.classList.toggle("is-active"); 
     menu.classList.toggle("show");
     header.classList.toggle("down");
   });
